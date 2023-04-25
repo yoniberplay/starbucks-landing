@@ -1,79 +1,32 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
+
+<div class="principal d-flex flex-column">
+
+  <div class="menu">
+    <ul>
+  <li><a href="#home">Coffe</a></li>
+  <li><a href="#news">Tea</a></li>
+  <li><a href="#contact">Menu</a></li>
+  <li><a href="#news">About Us</a></li>
+  <li><a href="#contact">Card</a></li>  
+</ul>
+  </div>
+
+  <v-row>
+ <v-col cols="12" md="10">
+  <div class="whiteZone">
+
+</div>
+ </v-col>
+ <v-col cols="12" md="2">
+ 
+</v-col>
+
   </v-row>
+
+
+</div>
+
 </template>
 
 <script>
@@ -81,3 +34,63 @@ export default {
   name: 'IndexPage'
 }
 </script>
+
+<style scoped lang="scss">
+.principal{
+  position: relative;  
+  background-color:#00704A;
+
+.menu{
+position: absolute;
+width: 483px;
+height: 24px;
+left: 812px;
+top: 10px;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+ border-bottom: 5px #ffffff solid;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+}
+
+  
+
+
+.whiteZone{
+  background-color: #ffffff;
+  height: 980px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.greenZone{
+  background-color:#00704A;
+  height: 980px;
+  
+
+}
+}
+
+
+</style>
