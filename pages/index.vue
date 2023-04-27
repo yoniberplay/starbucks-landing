@@ -1,11 +1,12 @@
 <template>
   <div class="principal d-flex flex-column">
     <NavBar></NavBar>
+    <SocialNet />
     <img class="imgNarLeft" src="../static/image 1.svg" alt="">
     <img class="imgfrappe" src="../static/frappe 1.svg" alt="">
 
     <v-row>
-      <v-col cols="12" md="10">
+      <v-col cols="12" md="9">
         <div class="whiteZone d-flex flex-column justify-center align-center">
 
           <div class="d-flex flex-column ">
@@ -17,15 +18,17 @@
             <p>with great care. Our passion for coffee is</p>
             <p>rivaled only by our love of sharing it.</p>
 
-            <div class="btnlearMore">
-
+            <div class="">
+              <v-btn class="btnlearMore mt-4" x-large color="primarioStarBuck" dark>
+                Learn More
+              </v-btn>
             </div>
           </div>
 
 
         </div>
       </v-col>
-      <v-col cols="12" md="2">
+      <v-col cols="12" md="3">
 
       </v-col>
 
@@ -38,18 +41,30 @@
 <script>
 
 import NavBar from '../components/NavBar.vue';
+import SocialNet from '../components/SocialNet.vue';
 
 
 export default {
   name: 'IndexPage',
   mounted() { },
+  created() {
+
+  },
   components: {
     NavBar,
+    SocialNet
   }
 }
 </script>
 
 <style scoped lang="scss">
+.btnlearMore {
+
+  width: 263px;
+  height: 89px;
+  box-shadow: 20px 20px 40px #E5E5E5;
+}
+
 .principal {
   position: relative;
   background-color: #00704A;
@@ -81,8 +96,9 @@ export default {
   position: absolute;
   width: 510px;
   height: 496px;
-  // left: 785px;
-  right: -75px;
+
+  left: 860px;
+  // right: 50px;
   top: 242px;
 
 
@@ -112,14 +128,14 @@ export default {
   p {
     margin: 0;
     font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 60px;
-/* or 200% */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    /* or 200% */
 
 
-letter-spacing: 0.05em;
+    letter-spacing: 0.05em;
 
     color: #000000;
   }

@@ -1,11 +1,11 @@
 <template>
    <div class="menu">
     <ul>
-  <li class="coffe"><a href="#home">Coffe</a></li>
-  <li><a href="#news">Tea</a></li>
-  <li><a href="#contact">Menu</a></li>
-  <li><a href="#news">About Us</a></li>
-  <li><a href="#contact">Card</a></li>  
+  <li class="coffe"><a href="#coffe">Coffe</a></li>
+  <li><a href="#Tea">Tea</a></li>
+  <li><a href="#Menu">Menu</a></li>
+  <li><a href="#About">About Us</a></li>
+  <li><a href="#Card">Card</a></li>  
 </ul>
   </div>
   </template>
@@ -15,9 +15,9 @@
 position: absolute;
 width: 483px;
 height: 24px;
-// left: 812px;
+left: 812px;
 top: 10px;
-right: 130px;
+// right: 250px;
 
 ul {
   list-style-type: none;
@@ -37,6 +37,9 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+//   width: 483px;
+//   height: 24px;
+//   font-weight: bold;
 }
 
 .coffe{

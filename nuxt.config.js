@@ -9,8 +9,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - starbucks-landing',
-    title: 'starbucks-landing',
+    titleTemplate: 'Starbucks',
+    title: 'Starbucks',
     htmlAttrs: {
       lang: 'en'
     },
@@ -59,7 +59,8 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+          success: colors.green.accent3,
+          primarioStarBuck: '#00704A',
         }
       }
     }
