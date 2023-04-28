@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <v-content lang="en" translate="no" class="notranslate">
+    <v-main lang="en" translate="no" class="notranslate">
         <nuxt />
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 <script>
@@ -21,7 +21,15 @@ export default {
 };
 </script>
 <style lang="scss">
-   html{
-    background-color: #00704A;
-   }
+//    html{
+//     background-color: #ffffff;
+//    }
+
+//    @media only screen and (min-width: 768px) {
+//   /* For desktop: */
+//   html{
+//     background-color: #00704A;;
+//    }
+// }
+
 </style>

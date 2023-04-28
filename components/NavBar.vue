@@ -11,6 +11,14 @@
   </template>
   
   <style  scoped lang="scss">
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+*{
+    display: none;
+}
+
+}
   .menu{
 position: absolute;
 width: 483px;
@@ -63,6 +71,11 @@ li a:hover:not(.active) {
 .active {
   background-color: #04AA6D;
 }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+ 
 }  
   </style>
   
