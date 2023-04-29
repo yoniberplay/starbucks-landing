@@ -1,7 +1,9 @@
 <template>
   <div class="principal d-flex ">
+    <NavBarMobile ></NavBarMobile>>
     <NavBar></NavBar>
     <SocialNet />
+    <MenuRightPhone ></MenuRightPhone>
     <img class="imgNarLeft" src="../static/image 1.svg" alt="">
     <img class="imgfrappe" src="../static/frappe 1.svg" alt="">
 
@@ -27,9 +29,9 @@
 
         </div>
       </v-col>
-      <v-col cols="12" md="3" xs="12" sm="12">
+      <!-- <v-col cols="12" md="3" xs="12" sm="12">
 
-      </v-col>
+      </v-col> -->
 
     </v-row>
 
@@ -42,7 +44,8 @@
 
 import NavBar from '../components/NavBar.vue';
 import SocialNet from '../components/SocialNet.vue';
-
+import NavBarMobile from '../components/NavBarMobile.vue';
+import MenuRightPhone from '../components/MenuRightPhone.vue';
 
 export default {
   name: 'IndexPage',
@@ -52,8 +55,11 @@ export default {
   },
   components: {
     NavBar,
-    SocialNet
-  }
+    SocialNet,
+    NavBarMobile,
+    MenuRightPhone
+  },
+
 }
 </script>
 

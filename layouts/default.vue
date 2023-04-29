@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
     <v-main lang="en" translate="no" class="notranslate">
+      
         <nuxt />
     </v-main>
   </v-app>
@@ -20,7 +21,7 @@ export default {
   }
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 //    html{
 //     background-color: #ffffff;
 //    }

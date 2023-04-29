@@ -61,6 +61,7 @@ export default {
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
           primarioStarBuck: '#00704A',
+          cerrarModalPhone: '#949494',
         }
       }
     }
