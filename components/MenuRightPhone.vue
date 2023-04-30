@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex flex-column align-end principal" @click="mostrarOcultar">
+    <div class="d-flex flex-column align-end MenuRightPhone" @click="mostrarOcultar">
 
         <div class="barraL"></div>
         <div class="barraS"></div>
@@ -13,7 +13,6 @@
 export default {
     methods: {
     mostrarOcultar() {
-      console.log(1)
         this.$store.commit('userManager/setdrawer');
     }
   },
@@ -22,24 +21,24 @@ export default {
 </script>
   
 <style lang="scss" scoped>
-.principal {
+.MenuRightPhone {
     display: none;
-
 }
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
 
 
-    .principal {
+    .MenuRightPhone {
 
         display: inline-block;
         position: absolute;
         // top: 27px;
-        left: 450px;
+        left: 270px;
         top: 40px;
         width: 73px;
         height: 61px;
+        z-index: 3;
 
         .barraL {
             width: 49px;

@@ -6,7 +6,7 @@ export const state = () => ({
   export const mutations = {  
     setdrawer(state) {
       state.drawer = !state.drawer;
-    }
+    },
   
   }
   

@@ -1,13 +1,14 @@
 <template>
   <div class="principal d-flex ">
-    <NavBarMobile ></NavBarMobile>>
+    <MenuRightPhone ></MenuRightPhone>
+    <NavBarMobile ></NavBarMobile>
     <NavBar></NavBar>
     <SocialNet />
-    <MenuRightPhone ></MenuRightPhone>
     <img class="imgNarLeft" src="../static/image 1.svg" alt="">
     <img class="imgfrappe" src="../static/frappe 1.svg" alt="">
 
     <v-row>
+
       <v-col cols="12" md="9" xs="12" sm="12">
         <div class="whiteZone d-flex flex-column justify-center align-center">
 
@@ -89,9 +90,8 @@ div .OurCoffee{
   position: relative;
   background-color: #f8f8f8;
   height: 100vh;
+  width: 100vw;
   align-items: center;
- 
-
 }
 
 .greenScreenPhone{
@@ -152,17 +152,17 @@ div .OurCoffee{
     margin: 0;
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 400;
+    // font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     display: flex;
 align-items: center;
 text-align: center;
-letter-spacing: 0.05em;
+// letter-spacing: 0.05em;
     /* or 200% */
 
 
-    letter-spacing: 0.05em;
+    // letter-spacing: 0.05em;
 
     color: #000000;
   }
@@ -170,6 +170,16 @@ letter-spacing: 0.05em;
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+.imgNarLeft{
+  position: absolute;
+  width: 73px;
+  height: 61px;
+  left: 10px;
+  top: 18px;
+}
+
+
+
 
 
 }
