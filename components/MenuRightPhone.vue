@@ -34,7 +34,7 @@ export default {
         display: inline-block;
         position: absolute;
         // top: 27px;
-        left: 270px;
+        right: 10%;
         top: 40px;
         width: 73px;
         height: 61px;

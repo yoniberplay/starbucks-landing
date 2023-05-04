@@ -3,16 +3,16 @@
     <MenuRightPhone ></MenuRightPhone>
     <NavBarMobile ></NavBarMobile>
     <NavBar></NavBar>
-    <SocialNet />
+    
     <img class="imgNarLeft" src="../static/image 1.svg" alt="">
-    <img class="imgfrappe" src="../static/frappe 1.svg" alt="">
+   
 
     <v-row>
 
       <v-col cols="12" md="9" xs="12" sm="12">
         <div class="whiteZone d-flex flex-column justify-center align-center">
 
-          <div class="d-flex flex-column">
+          <div class="d-flex flex-column content">
             <div class="d-flex "> <span class="OurCoffee">Our Coffee</span></div>
             <p>Since 1971, it always has been and will</p>
             <p>always be about quality. We’re passionate</p>
@@ -30,13 +30,16 @@
 
         </div>
       </v-col>
-      <!-- <v-col cols="12" md="3" xs="12" sm="12">
-
-      </v-col> -->
+      <v-col cols="12" md="3" xs="12" sm="12" class="seccion2">
+        <img class="imgfrappe" src="../static/frappe 1.svg" alt="">
+        <SocialNet />
+      </v-col>
 
     </v-row>
 
-    <div class="greenScreenPhone"></div>
+    <div class="greenScreenPhone">
+      <!-- <img src="../static/frappe 1.svg" alt=""> -->
+    </div>
 
   </div>
 </template>
@@ -92,6 +95,7 @@ div .OurCoffee{
   height: 100vh;
   width: 100vw;
   align-items: center;
+  // background-color: red ;
 }
 
 .greenScreenPhone{
@@ -104,6 +108,7 @@ div .OurCoffee{
    background-color: #00704A;
    border-top-right-radius: 100%;
   border-top-left-radius: 100%;
+
   }
 
 .imgNarLeft {
@@ -114,18 +119,7 @@ div .OurCoffee{
   top: 18px;
 }
 
-.imgfrappe {
-  position: absolute;
-  width: 305.28px;
-  height: 296.9px;
-  // left: 50%;
-  right: 25%;
-  // top: 691.03px;
-  bottom: 60px;
-  filter: drop-shadow(10px 40px 30px rgba(0, 0, 0, 0.25));
-  transform: rotate(-30deg);
-  z-index: 1;
-}
+
 
 
 .OurCoffee {
@@ -153,7 +147,7 @@ div .OurCoffee{
     font-family: 'Lato';
     font-style: normal;
     // font-weight: 400;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 30px;
     display: flex;
 align-items: center;
@@ -178,15 +172,49 @@ text-align: center;
   top: 18px;
 }
 
+.seccion2{
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+}
+
+    .imgfrappe {
+  // position: absolute;
+  width: 305.28px;
+  height: 296.9px;
+  margin-bottom: -50%;
+  // margin-left: -75%;
+  // top: 50%;
+  // left: 0;
+  // transform: translate(0, -50%);
+  // left: 50%;
+  // right: 0%;
+  // top: 691.03px;
+  // bottom: 60px;
+  filter: drop-shadow(10px 40px 30px rgba(0, 0, 0, 0.25));
+  transform: rotate(-30deg);
+  z-index: 3;
+}
 
 
-
+.content{
+  // margin-right: 2px;
+}
 
 }
 
 @media only screen and (min-width: 768px) {
 
   /* For desktop: */
+
+
+  .seccion2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .btnlearMore {
 
@@ -229,14 +257,31 @@ box-shadow: 20px 20px 40px #E5E5E5;
   }
 
   .imgfrappe {
-    position: absolute;
+    // position: absolute;
     width: 510px;
     height: 496px;
-    left: 860px;
-    // right: 50px;
-    top: 242px;
+    // left: 860px;
+    // top: 242px;
     filter: drop-shadow(50px 0px 50px rgba(0, 0, 0, 0.25));
     transform: none;
+    
+
+    // .imgfrappe {
+  // position: absolute;
+  // width: 305.28px;
+  // height: 296.9px;
+  margin-left: -75%;
+  // top: 50%;
+  // left: 0;
+  // transform: translate(0, -50%);
+  // // left: 50%;
+  // // right: 0%;
+  // // top: 691.03px;
+  // // bottom: 60px;
+  // filter: drop-shadow(10px 40px 30px rgba(0, 0, 0, 0.25));
+  // transform: rotate(-30deg);
+  // z-index: 3;
+// }
   }
   .greenScreenPhone{
     display: none;
