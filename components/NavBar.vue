@@ -23,8 +23,9 @@
 position: absolute;
 width: 483px;
 height: 24px;
-left: 812px;
+left: 60%;
 top: 10px;
+z-index: 3;
 // right: 250px;
 
 ul {
